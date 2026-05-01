@@ -1,0 +1,6 @@
+#Accepts mass and velocity
+m = float(input())
+v = float(input())
+#calculate momentum 
+p=m*v
+print(f"{p:.2f}kgm/s")
