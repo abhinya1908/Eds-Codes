@@ -1,0 +1,34 @@
+list=[]
+while True:
+	print("1. Add")
+	print("2. Remove")
+	print("3. Display")
+	print("4. Quit")
+	ch=int(input("Enter choice: "))
+
+	if ch==1:
+		num=int(input("Integer: "))
+		list.append(num)
+		print("List after adding:",list)
+
+	elif ch==2:
+		if not list:
+			print("List is empty")
+		else:
+			num1=int(input("Integer: "))
+			if num1 in list:
+				list.remove(num1)
+				print("List after removing:",list)
+			else:
+				print("Element not found")
+
+	elif ch==3:
+		if not list:
+			print("List is empty")
+		else:
+			print(list)
+
+	elif ch==4:
+		break
+	else:
+		print("Invalid choice")
